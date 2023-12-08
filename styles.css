@@ -3,10 +3,11 @@ body{
     flex-direction: column;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF2F2;
 }
 
 .header-head, .container-footer{
-    background-color: #1F2937;
+    background-color: #7286D3;
     padding-bottom: 100px;
 }
 
@@ -19,12 +20,12 @@ body{
 
 .header-logo, .action-header-text{
     font-size: 24px;
-    color: #f9faf8;
+    color: #FFF2F2;
 }
 
 .link-header, .subtext-hero, .hero-sign-up, .information-card-text-content, .action-header-subtext, .action-button, .footer-text{
     font-size: 18px;
-    color: #E5E7EB;
+    color: #FFF2F2;
     text-decoration: none;
 }
 
@@ -52,7 +53,7 @@ body{
 .header-hero{
     font-size: 48px;
     font-weight: bolder;
-    color: #f9faf8;
+    color: #FFF2F2;
     margin: 0;
 }
 
@@ -66,8 +67,8 @@ body{
     height: 40px;
     margin-top: 10px;
     border-radius: 5px;
-    border-color: #3882f6;
-    background-color: #3882f6;
+    border-color: #8EA7E9;
+    background-color: #8EA7E9;
     border-style: solid;
 }
 
@@ -82,7 +83,7 @@ body{
 .information-header, .quote-author{
     font-size: 36px;
     font-weight: bolder;
-    color: #1f2937;
+    color: #00021d;
 }
 
 .container-cards{
@@ -91,18 +92,28 @@ body{
     gap:40px
 }
 
+.information-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 .information-card-picture{
     width: 180px;
     height: 180px;
+    border-radius: 10px;
+    border-color:#7286D3;
+    border-style:solid;
 }
 
 .information-card-text-content{
-    color: #1f2937;
+    color: #7286D3;
     text-align: center;
 }
 
 .container-quote{
-    background-color: #E5E7EB;
+    background-color: #E5E0FF;
 
 }
 
@@ -129,7 +140,7 @@ body{
 }
 
 .container-action{
-    background-color: #3882f6;
+    background-color: #8EA7E9;
     margin: 50px 200px;
     padding: 50px 100px;
     border-radius: 10px;
@@ -157,8 +168,8 @@ body{
     width: 120px;
     height: 40px;
     border-radius: 10px;
-    border-color: #E5E7EB;
-    background-color: #3882f6;
+    border-color: #FFF2F2;
+    background-color: #8EA7E9;
     border-style: solid;
 }
 
