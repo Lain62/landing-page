@@ -13,8 +13,7 @@ body{
 
 .header{
     display: flex;
-    justify-content: space-between;
-    padding: 0px 250px;
+    justify-content: space-evenly;
     margin-bottom: 100px;
 }
 
@@ -38,18 +37,23 @@ body{
 .hero{
     display: flex;
     margin-top: 16px;
-    padding: 0px 250px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-hero{
     display: flex;
     flex-direction: column;
+    max-width: 500px;
 }
 
 .right-hero-image{
-    width: 540px;
+    height:auto;
+    max-width: 400px;
     border-radius: 10px;
     box-shadow: 10px 10px 5px #2c343f;
+    object-fit: contain;
 }
 
 .header-hero{
@@ -72,14 +76,15 @@ body{
     border-color: #8EA7E9;
     background-color: #8EA7E9;
     border-style: solid;
+    align-self: center;
+    margin: 40px 0px;
 }
 
 .information{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0px 400px;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .information-header, .quote-author{
@@ -91,7 +96,9 @@ body{
 .container-cards{
     display: flex;
     flex-direction: row;
-    gap:40px
+    gap:40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .information-cards{
@@ -99,7 +106,8 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    ;
+    
+    
 }
 
 .information-card-picture{
@@ -119,10 +127,13 @@ body{
     border-radius: 10px;
     background-color: #8EA7E9;
     border-color: #8EA7E9;
+    align-self: center;
 }
 
 .container-quote{
-    background-color: #E5E0FF;
+    background-color: #E6E0FF;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -140,24 +151,28 @@ body{
     font-weight: lighter;
     color: #2c343f;
     margin: 0;
+    min-width: 300px;
 }
 
 .quote-author{
     font-size: 24px;
     text-align: right;
     margin: 10px;
+    min-width: 300px;
 }
 
 .container-action{
     background-color: #8EA7E9;
-    margin: 50px 200px;
-    padding: 50px 100px;
+    margin: 50px auto;
+    padding: min(5vh) min(5vw);
     border-radius: 10px;
 }
 
 .action{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5vw;
 }
 
 .action-header-text, .action-header-subtext{
@@ -189,4 +204,10 @@ body{
 .footer-text{
     text-align: center;
     margin: 60px 0px;
+}
+
+.right-hero{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
